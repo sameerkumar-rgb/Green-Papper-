@@ -29,11 +29,12 @@ document.addEventListener('DOMContentLoaded', () => {
       navLinks.style.top = '100%';
       navLinks.style.left = '0';
       navLinks.style.right = '0';
-      navLinks.style.background = 'rgba(10,15,10,0.95)';
+      navLinks.style.background = 'rgba(255,255,255,0.97)';
       navLinks.style.padding = '24px';
       navLinks.style.gap = '20px';
-      navLinks.style.backdropFilter = 'blur(20px)';
-      navLinks.style.borderBottom = '1px solid rgba(59,235,122,0.1)';
+      navLinks.style.backdropFilter = 'blur(16px)';
+      navLinks.style.borderBottom = '1px solid #e5e9e5';
+      navLinks.style.boxShadow = '0 4px 16px rgba(0,0,0,0.06)';
     });
   }
 
