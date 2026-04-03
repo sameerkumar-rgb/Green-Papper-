@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Papper — For Development Teams</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+  <div class="grain"></div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">&#9679;</span> Green Papper
+      </a>
+      <div class="nav-links">
+        <a href="dev.html" class="nav-active">Dev</a>
+        <a href="design.html">Design</a>
+        <a href="marketing.html">Marketing</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="#" class="nav-cta">Get Started</a>
+      </div>
+      <button class="mobile-menu" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero page-hero">
+    <div class="hero-badge" style="border-color: rgba(96, 165, 250, 0.3); color: var(--dev-color);">For Development Teams</div>
+    <h1 class="hero-title">
+      <span class="line line-1">Ship code</span>
+      <span class="line line-2">with full</span>
+      <span class="line line-3" style="color: var(--dev-color);">context.</span>
+    </h1>
+    <p class="hero-sub">
+      Sprint planning, backlog grooming, and releases — all wired to the product roadmap.
+      Engineers see the <em>why</em> behind every ticket.
+    </p>
+    <div class="hero-actions">
+      <a href="#" class="btn btn-primary" style="background: var(--dev-color);">Start Building</a>
+      <a href="#capabilities" class="btn btn-ghost">Explore Features &darr;</a>
+    </div>
+  </header>
+
+  <!-- Capabilities Section -->
+  <section class="pillars" id="capabilities">
+    <div class="section-header">
+      <span class="section-tag" style="color: var(--dev-color);">01 / Capabilities</span>
+      <h2 class="section-title">Everything engineers<br>need in one place.</h2>
+    </div>
+
+    <div class="feature-grid" style="max-width: var(--content-max); margin: 0 auto; padding: 0 40px;">
+      <div class="feature-card dev-accent">
+        <div class="feature-icon" style="color: var(--dev-color);">
+          <svg width="28" height="28" viewBox="0 0 40 40" fill="none">
+            <path d="M15 12L7 20L15 28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M25 12L33 20L25 28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h4>Sprint Boards</h4>
+        <p>Kanban and scrum boards with roadmap context baked in. Every ticket links back to the product goal it serves.</p>
+      </div>
+      <div class="feature-card dev-accent">
+        <div class="feature-icon" style="color: var(--dev-color);">
+          <svg width="28" height="28" viewBox="0 0 40 40" fill="none">
+            <circle cx="16" cy="16" r="6" stroke="currentColor" stroke-width="2.5"/>
+            <circle cx="26" cy="26" r="6" stroke="currentColor" stroke-width="2.5"/>
+            <path d="M21 13L29 21" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h4>Git Integration</h4>
+        <p>GitHub, GitLab, Bitbucket — PRs auto-link to tasks. Commits update progress. Branch status visible in the roadmap.</p>
+      </div>
+      <div class="feature-card dev-accent">
+        <div class="feature-icon" style="color: var(--dev-color);">
+          <svg width="28" height="28" viewBox="0 0 40 40" fill="none">
+            <rect x="6" y="8" width="28" height="24" rx="3" stroke="currentColor" stroke-width="2.5"/>
+            <path d="M6 16H34" stroke="currentColor" stroke-width="2.5"/>
+            <path d="M14 8V16" stroke="currentColor" stroke-width="2.5"/>
+          </svg>
+        </div>
+        <h4>Technical Specs</h4>
+        <p>Structured spec templates with embedded design mocks, acceptance criteria, and automated review workflows.</p>
+      </div>
+      <div class="feature-card dev-accent">
+        <div class="feature-icon" style="color: var(--dev-color);">
+          <svg width="28" height="28" viewBox="0 0 40 40" fill="none">
+            <path d="M20 6V34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M12 14L20 6L28 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8 34H32" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h4>Release Management</h4>
+        <p>Coordinate deploys across services. Feature flags, rollback tracking, and release notes — generated automatically.</p>
+      </div>
+      <div class="feature-card dev-accent">
+        <div class="feature-icon" style="color: var(--dev-color);">
+          <svg width="28" height="28" viewBox="0 0 40 40" fill="none">
+            <path d="M10 28L16 20L22 24L30 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M24 12H30V18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h4>Velocity Tracking</h4>
+        <p>Burndown charts, velocity trends, and cycle-time analytics. Spot bottlenecks before they slow you down.</p>
+      </div>
+      <div class="feature-card dev-accent">
+        <div class="feature-icon" style="color: var(--dev-color);">
+          <svg width="28" height="28" viewBox="0 0 40 40" fill="none">
+            <rect x="8" y="8" width="10" height="10" rx="2" stroke="currentColor" stroke-width="2.5"/>
+            <rect x="22" y="8" width="10" height="10" rx="2" stroke="currentColor" stroke-width="2.5"/>
+            <rect x="8" y="22" width="10" height="10" rx="2" stroke="currentColor" stroke-width="2.5"/>
+            <rect x="22" y="22" width="10" height="10" rx="2" stroke="currentColor" stroke-width="2.5"/>
+          </svg>
+        </div>
+        <h4>API & Webhooks</h4>
+        <p>Open REST API and webhooks for custom integrations. Build your own workflows on top of Green Papper.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workflow Section -->
+  <section class="workflow" id="dev-workflow">
+    <div class="section-header">
+      <span class="section-tag" style="color: var(--dev-color);">02 / Dev Workflow</span>
+      <h2 class="section-title">From ticket to<br>production in flow.</h2>
+    </div>
+
+    <div class="workflow-track">
+      <div class="workflow-line" style="background: linear-gradient(to bottom, var(--dev-color), rgba(96,165,250,0.3), transparent);"></div>
+      <div class="workflow-step">
+        <div class="step-dot" style="border-color: var(--dev-color);"></div>
+        <div class="step-content">
+          <span class="step-num">01</span>
+          <h4>Ticket Created</h4>
+          <p>Product creates a ticket with full context — user story, design mocks, acceptance criteria, and priority score.</p>
+        </div>
+      </div>
+      <div class="workflow-step">
+        <div class="step-dot" style="border-color: var(--dev-color);"></div>
+        <div class="step-content">
+          <span class="step-num">02</span>
+          <h4>Branch & Build</h4>
+          <p>Engineer picks up the ticket, creates a branch. Git integration auto-links the branch to the task.</p>
+        </div>
+      </div>
+      <div class="workflow-step">
+        <div class="step-dot" style="border-color: var(--dev-color);"></div>
+        <div class="step-content">
+          <span class="step-num">03</span>
+          <h4>PR & Review</h4>
+          <p>Pull request auto-updates the task status. Reviewers see product context inline. Design can verify the implementation.</p>
+        </div>
+      </div>
+      <div class="workflow-step">
+        <div class="step-dot" style="border-color: var(--dev-color);"></div>
+        <div class="step-content">
+          <span class="step-num">04</span>
+          <h4>Ship & Measure</h4>
+          <p>Merge triggers release notes. Feature flag controls rollout. Product metrics start tracking automatically.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Integrations Section -->
+  <section class="features" id="integrations">
+    <div class="section-header">
+      <span class="section-tag" style="color: var(--dev-color);">03 / Integrations</span>
+      <h2 class="section-title">Plugs into your<br>existing stack.</h2>
+    </div>
+
+    <div class="integration-grid">
+      <div class="integration-item">
+        <div class="integration-name">GitHub</div>
+        <div class="integration-desc">PRs, commits, branches</div>
+      </div>
+      <div class="integration-item">
+        <div class="integration-name">GitLab</div>
+        <div class="integration-desc">Merge requests, pipelines</div>
+      </div>
+      <div class="integration-item">
+        <div class="integration-name">Jira</div>
+        <div class="integration-desc">Two-way sync</div>
+      </div>
+      <div class="integration-item">
+        <div class="integration-name">Slack</div>
+        <div class="integration-desc">Notifications, commands</div>
+      </div>
+      <div class="integration-item">
+        <div class="integration-name">VS Code</div>
+        <div class="integration-desc">In-editor task view</div>
+      </div>
+      <div class="integration-item">
+        <div class="integration-name">Datadog</div>
+        <div class="integration-desc">Deploy tracking</div>
+      </div>
+      <div class="integration-item">
+        <div class="integration-name">PagerDuty</div>
+        <div class="integration-desc">Incident linking</div>
+      </div>
+      <div class="integration-item">
+        <div class="integration-name">CircleCI</div>
+        <div class="integration-desc">Build status</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-inner" style="border-color: rgba(96, 165, 250, 0.15);">
+      <h2>Ready to ship with context?</h2>
+      <p>Give your engineering team the product context they've been missing.</p>
+      <div class="cta-actions">
+        <a href="#" class="btn btn-primary btn-lg" style="background: var(--dev-color);">Start Free Trial</a>
+        <a href="#" class="btn btn-ghost btn-lg">Book a Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo"><span class="logo-icon">&#9679;</span> Green Papper</span>
+        <p>Product management for teams that ship.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>Product</h5>
+          <a href="index.html#features">Features</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="integrations.html">Integrations</a>
+        </div>
+        <div class="footer-col">
+          <h5>Teams</h5>
+          <a href="dev.html">For Dev</a>
+          <a href="design.html">For Design</a>
+          <a href="marketing.html">For Marketing</a>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Green Papper. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

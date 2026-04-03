@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Papper — Contact Us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+  <div class="grain"></div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">&#9679;</span> Green Papper
+      </a>
+      <div class="nav-links">
+        <a href="dev.html">Dev</a>
+        <a href="design.html">Design</a>
+        <a href="marketing.html">Marketing</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="#" class="nav-cta">Get Started</a>
+      </div>
+      <button class="mobile-menu" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero page-hero" style="min-height: 50vh;">
+    <div class="hero-badge">Contact Us</div>
+    <h1 class="hero-title">
+      <span class="line line-1">Let's</span>
+      <span class="line line-2">start a</span>
+      <span class="line line-3">conversation.</span>
+    </h1>
+    <p class="hero-sub">
+      Whether you want a demo, have a question, or just want to say hello — we'd love to hear from you.
+    </p>
+  </header>
+
+  <!-- Contact Form & Info -->
+  <section class="pillars" style="padding-top: 0;">
+    <div class="pillar-grid" style="grid-template-columns: 1fr 1fr; gap: 32px;">
+
+      <!-- Contact Form -->
+      <div class="pillar-card" style="border-color: rgba(59, 235, 122, 0.15);">
+        <h3 style="margin-bottom: 24px;">Send us a message</h3>
+        <form id="contact-form" style="display: flex; flex-direction: column; gap: 20px;">
+          <div>
+            <label style="display: block; font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--text-muted); margin-bottom: 8px;">Name</label>
+            <input type="text" placeholder="Your name" style="width: 100%; padding: 14px 18px; background: var(--bg); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; color: var(--text); font-family: var(--font-body); font-size: 0.95rem; outline: none; transition: border-color 0.3s;" onfocus="this.style.borderColor='rgba(59,235,122,0.3)'" onblur="this.style.borderColor='rgba(255,255,255,0.08)'">
+          </div>
+          <div>
+            <label style="display: block; font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--text-muted); margin-bottom: 8px;">Email</label>
+            <input type="email" placeholder="you@company.com" style="width: 100%; padding: 14px 18px; background: var(--bg); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; color: var(--text); font-family: var(--font-body); font-size: 0.95rem; outline: none; transition: border-color 0.3s;" onfocus="this.style.borderColor='rgba(59,235,122,0.3)'" onblur="this.style.borderColor='rgba(255,255,255,0.08)'">
+          </div>
+          <div>
+            <label style="display: block; font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--text-muted); margin-bottom: 8px;">Subject</label>
+            <select style="width: 100%; padding: 14px 18px; background: var(--bg); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; color: var(--text-secondary); font-family: var(--font-body); font-size: 0.95rem; outline: none; cursor: pointer; transition: border-color 0.3s;" onfocus="this.style.borderColor='rgba(59,235,122,0.3)'" onblur="this.style.borderColor='rgba(255,255,255,0.08)'">
+              <option value="">Select a topic</option>
+              <option value="demo">Book a Demo</option>
+              <option value="sales">Sales Inquiry</option>
+              <option value="support">Technical Support</option>
+              <option value="partnership">Partnership</option>
+              <option value="careers">Careers</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div>
+            <label style="display: block; font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--text-muted); margin-bottom: 8px;">Message</label>
+            <textarea rows="5" placeholder="Tell us how we can help..." style="width: 100%; padding: 14px 18px; background: var(--bg); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; color: var(--text); font-family: var(--font-body); font-size: 0.95rem; outline: none; resize: vertical; transition: border-color 0.3s;" onfocus="this.style.borderColor='rgba(59,235,122,0.3)'" onblur="this.style.borderColor='rgba(255,255,255,0.08)'"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="justify-content: center;">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+        <div class="pillar-card">
+          <div class="pillar-number">SALES</div>
+          <h3 style="font-size: 1.4rem; margin-bottom: 12px;">Book a Demo</h3>
+          <p>See Green Papper in action. Our team will walk you through the platform and answer all your questions.</p>
+          <a href="#" class="btn btn-ghost" style="margin-top: 20px;">Schedule a Call</a>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-number">SUPPORT</div>
+          <h3 style="font-size: 1.4rem; margin-bottom: 12px;">Help Center</h3>
+          <p>Browse our documentation, tutorials, and FAQs. Most questions are answered in under 2 minutes.</p>
+          <a href="#" class="btn btn-ghost" style="margin-top: 20px;">Visit Help Center</a>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-number">COMMUNITY</div>
+          <h3 style="font-size: 1.4rem; margin-bottom: 12px;">Join the Community</h3>
+          <p>Connect with other product teams using Green Papper. Share workflows, templates, and best practices.</p>
+          <a href="#" class="btn btn-ghost" style="margin-top: 20px;">Join Slack Community</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Office Locations -->
+  <section class="features">
+    <div class="section-header">
+      <span class="section-tag">Our Offices</span>
+      <h2 class="section-title">Find us around<br>the world.</h2>
+    </div>
+
+    <div class="integration-grid" style="grid-template-columns: repeat(3, 1fr);">
+      <div class="integration-item">
+        <div class="integration-name">San Francisco</div>
+        <div class="integration-desc">HQ &middot; USA</div>
+      </div>
+      <div class="integration-item">
+        <div class="integration-name">London</div>
+        <div class="integration-desc">EMEA &middot; UK</div>
+      </div>
+      <div class="integration-item">
+        <div class="integration-name">Bangalore</div>
+        <div class="integration-desc">APAC &middot; India</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo"><span class="logo-icon">&#9679;</span> Green Papper</span>
+        <p>Product management for teams that ship.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>Product</h5>
+          <a href="index.html#features">Features</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="integrations.html">Integrations</a>
+        </div>
+        <div class="footer-col">
+          <h5>Teams</h5>
+          <a href="dev.html">For Dev</a>
+          <a href="design.html">For Design</a>
+          <a href="marketing.html">For Marketing</a>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Green Papper. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

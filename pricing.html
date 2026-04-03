@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Papper — Pricing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+  <div class="grain"></div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">&#9679;</span> Green Papper
+      </a>
+      <div class="nav-links">
+        <a href="dev.html">Dev</a>
+        <a href="design.html">Design</a>
+        <a href="marketing.html">Marketing</a>
+        <a href="pricing.html" class="nav-active">Pricing</a>
+        <a href="#" class="nav-cta">Get Started</a>
+      </div>
+      <button class="mobile-menu" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero page-hero" style="min-height: 60vh;">
+    <div class="hero-badge">Simple, Transparent Pricing</div>
+    <h1 class="hero-title">
+      <span class="line line-1">Plans that</span>
+      <span class="line line-2">scale with</span>
+      <span class="line line-3">your team.</span>
+    </h1>
+    <p class="hero-sub">
+      Start free. Upgrade when you're ready. No surprises, no hidden fees.
+    </p>
+  </header>
+
+  <!-- Pricing Cards -->
+  <section class="pillars" id="plans" style="padding-top: 0;">
+    <div class="pillar-grid" style="grid-template-columns: repeat(3, 1fr);">
+
+      <!-- Free -->
+      <div class="pillar-card" style="border-color: rgba(255,255,255,0.08);">
+        <div class="pillar-number">FREE</div>
+        <h3 style="margin-bottom: 4px;">Starter</h3>
+        <div style="font-family: var(--font-display); font-size: 3rem; color: var(--accent); margin: 16px 0 8px;">$0</div>
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 28px;">per user / month</p>
+        <p>Perfect for small teams getting started with product management.</p>
+        <ul class="pillar-features">
+          <li>Up to 5 team members</li>
+          <li>1 product roadmap</li>
+          <li>Basic sprint boards</li>
+          <li>Community support</li>
+          <li>100 MB file storage</li>
+        </ul>
+        <a href="#" class="btn btn-ghost" style="width: 100%; justify-content: center; margin-top: 12px;">Get Started Free</a>
+      </div>
+
+      <!-- Pro -->
+      <div class="pillar-card" style="border-color: rgba(59, 235, 122, 0.25); background: var(--bg-card-hover);">
+        <div class="pillar-number" style="color: var(--accent);">MOST POPULAR</div>
+        <h3 style="margin-bottom: 4px;">Pro</h3>
+        <div style="font-family: var(--font-display); font-size: 3rem; color: var(--accent); margin: 16px 0 8px;">$18</div>
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 28px;">per user / month</p>
+        <p>For growing teams that need full cross-functional alignment.</p>
+        <ul class="pillar-features">
+          <li>Unlimited team members</li>
+          <li>Unlimited roadmaps</li>
+          <li>Git, Figma, Slack integrations</li>
+          <li>Custom workflows & templates</li>
+          <li>Feedback hub & prioritization</li>
+          <li>Auto status reports</li>
+          <li>10 GB file storage</li>
+          <li>Priority email support</li>
+        </ul>
+        <a href="#" class="btn btn-primary" style="width: 100%; justify-content: center; margin-top: 12px;">Start Free Trial</a>
+      </div>
+
+      <!-- Enterprise -->
+      <div class="pillar-card" style="border-color: rgba(167, 139, 250, 0.2);">
+        <div class="pillar-number" style="color: var(--stake-color);">ENTERPRISE</div>
+        <h3 style="margin-bottom: 4px;">Enterprise</h3>
+        <div style="font-family: var(--font-display); font-size: 3rem; color: var(--stake-color); margin: 16px 0 8px;">Custom</div>
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 28px;">tailored to your org</p>
+        <p>For organizations that need advanced security, compliance, and scale.</p>
+        <ul class="pillar-features">
+          <li>Everything in Pro</li>
+          <li>SSO / SAML authentication</li>
+          <li>Advanced audit logs</li>
+          <li>Custom SLAs</li>
+          <li>Dedicated success manager</li>
+          <li>On-premise deployment option</li>
+          <li>Unlimited storage</li>
+          <li>24/7 phone & Slack support</li>
+        </ul>
+        <a href="contact.html" class="btn btn-ghost" style="width: 100%; justify-content: center; margin-top: 12px; border-color: rgba(167,139,250,0.3); color: var(--stake-color);">Contact Sales</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="features" id="faq">
+    <div class="section-header">
+      <span class="section-tag">Questions & Answers</span>
+      <h2 class="section-title">Frequently asked<br>questions.</h2>
+    </div>
+
+    <div class="feature-grid" style="grid-template-columns: repeat(2, 1fr);">
+      <div class="feature-card">
+        <h4>Can I switch plans later?</h4>
+        <p>Yes. Upgrade or downgrade any time. Changes take effect on your next billing cycle. No penalties, no lock-in.</p>
+      </div>
+      <div class="feature-card">
+        <h4>Is there a free trial?</h4>
+        <p>Pro comes with a 14-day free trial. No credit card required. You get full access to every feature during the trial.</p>
+      </div>
+      <div class="feature-card">
+        <h4>What payment methods do you accept?</h4>
+        <p>We accept all major credit cards, ACH/wire transfers for annual plans, and can invoice Enterprise customers.</p>
+      </div>
+      <div class="feature-card">
+        <h4>Do you offer discounts?</h4>
+        <p>Annual billing saves 20%. We also offer special pricing for startups, nonprofits, and educational institutions.</p>
+      </div>
+      <div class="feature-card">
+        <h4>What happens to my data if I downgrade?</h4>
+        <p>Your data is never deleted. If you exceed the limits of your new plan, you'll have read-only access until you adjust.</p>
+      </div>
+      <div class="feature-card">
+        <h4>Can I get a demo before committing?</h4>
+        <p>Absolutely. Book a personalized demo with our team and we'll walk you through how Green Papper fits your workflow.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-inner">
+      <h2>Start building better products today.</h2>
+      <p>Free to start. No credit card required.</p>
+      <div class="cta-actions">
+        <a href="#" class="btn btn-primary btn-lg">Start Free Trial</a>
+        <a href="contact.html" class="btn btn-ghost btn-lg">Talk to Sales</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo"><span class="logo-icon">&#9679;</span> Green Papper</span>
+        <p>Product management for teams that ship.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>Product</h5>
+          <a href="index.html#features">Features</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="integrations.html">Integrations</a>
+        </div>
+        <div class="footer-col">
+          <h5>Teams</h5>
+          <a href="dev.html">For Dev</a>
+          <a href="design.html">For Design</a>
+          <a href="marketing.html">For Marketing</a>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Green Papper. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

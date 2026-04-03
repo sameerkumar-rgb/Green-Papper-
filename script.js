@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- Scroll reveal ---
   const revealElements = document.querySelectorAll(
-    '.pillar-card, .workflow-step, .feature-card, .cta-inner, .section-header'
+    '.pillar-card, .workflow-step, .feature-card, .cta-inner, .section-header, .integration-item'
   );
 
   revealElements.forEach(el => el.classList.add('reveal'));

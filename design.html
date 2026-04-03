@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Papper — For Design Teams</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+  <div class="grain"></div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">&#9679;</span> Green Papper
+      </a>
+      <div class="nav-links">
+        <a href="dev.html">Dev</a>
+        <a href="design.html" class="nav-active">Design</a>
+        <a href="marketing.html">Marketing</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="#" class="nav-cta">Get Started</a>
+      </div>
+      <button class="mobile-menu" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero page-hero">
+    <div class="hero-badge" style="border-color: rgba(244, 114, 182, 0.3); color: var(--design-color);">For Design Teams</div>
+    <h1 class="hero-title">
+      <span class="line line-1">Design with</span>
+      <span class="line line-2">clarity, not</span>
+      <span class="line line-3" style="color: var(--design-color);">chaos.</span>
+    </h1>
+    <p class="hero-sub">
+      From user research to pixel-perfect handoffs. Stay in sync with product decisions
+      and engineering constraints — all in real time.
+    </p>
+    <div class="hero-actions">
+      <a href="#" class="btn btn-primary" style="background: var(--design-color);">Start Designing</a>
+      <a href="#capabilities" class="btn btn-ghost">Explore Features &darr;</a>
+    </div>
+  </header>
+
+  <!-- Capabilities Section -->
+  <section class="pillars" id="capabilities">
+    <div class="section-header">
+      <span class="section-tag" style="color: var(--design-color);">01 / Capabilities</span>
+      <h2 class="section-title">Your design workflow,<br>fully connected.</h2>
+    </div>
+
+    <div class="feature-grid" style="max-width: var(--content-max); margin: 0 auto; padding: 0 40px;">
+      <div class="feature-card design-accent">
+        <div class="feature-icon" style="color: var(--design-color);">
+          <svg width="28" height="28" viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="12" stroke="currentColor" stroke-width="2.5"/>
+            <circle cx="20" cy="20" r="5" stroke="currentColor" stroke-width="2.5"/>
+          </svg>
+        </div>
+        <h4>Design Briefs</h4>
+        <p>Structured briefs with user stories, constraints, and success metrics. Every design starts with clear product context.</p>
+      </div>
+      <div class="feature-card design-accent">
+        <div class="feature-icon" style="color: var(--design-color);">
+          <svg width="28" height="28" viewBox="0 0 40 40" fill="none">
+            <rect x="6" y="6" width="28" height="28" rx="4" stroke="currentColor" stroke-width="2.5"/>
+            <path d="M6 14H34" stroke="currentColor" stroke-width="2.5"/>
+            <path d="M16 14V34" stroke="currentColor" stroke-width="2.5"/>
+          </svg>
+        </div>
+        <h4>Figma Embeds</h4>
+        <p>Embed Figma frames directly in tasks and specs. Engineers see the latest designs without leaving the platform.</p>
+      </div>
+      <div class="feature-card design-accent">
+        <div class="feature-icon" style="color: var(--design-color);">
+          <svg width="28" height="28" viewBox="0 0 40 40" fill="none">
+            <path d="M8 30L14 22L20 26L28 14L34 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8 8V34H34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h4>User Research Hub</h4>
+        <p>Centralize interviews, surveys, and usability tests. Tag insights and link them directly to design decisions.</p>
+      </div>
+      <div class="feature-card design-accent">
+        <div class="feature-icon" style="color: var(--design-color);">
+          <svg width="28" height="28" viewBox="0 0 40 40" fill="none">
+            <path d="M12 8H28C30.2 8 32 9.8 32 12V28C32 30.2 30.2 32 28 32H12C9.8 32 8 30.2 8 28V12C8 9.8 9.8 8 12 8Z" stroke="currentColor" stroke-width="2.5"/>
+            <path d="M14 18L18 22L26 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h4>Design Reviews</h4>
+        <p>Structured review workflows with inline comments. Stakeholders approve designs before engineering begins.</p>
+      </div>
+      <div class="feature-card design-accent">
+        <div class="feature-icon" style="color: var(--design-color);">
+          <svg width="28" height="28" viewBox="0 0 40 40" fill="none">
+            <rect x="8" y="12" width="24" height="16" rx="3" stroke="currentColor" stroke-width="2.5"/>
+            <circle cx="20" cy="20" r="4" stroke="currentColor" stroke-width="2.5"/>
+            <path d="M14 12V8H26V12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h4>Component Library</h4>
+        <p>Track your design system components alongside code components. Know what's built, what's pending, and what's outdated.</p>
+      </div>
+      <div class="feature-card design-accent">
+        <div class="feature-icon" style="color: var(--design-color);">
+          <svg width="28" height="28" viewBox="0 0 40 40" fill="none">
+            <path d="M20 8L32 16V28L20 36L8 28V16L20 8Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+            <path d="M20 20V36" stroke="currentColor" stroke-width="2.5"/>
+            <path d="M20 20L32 16" stroke="currentColor" stroke-width="2.5"/>
+            <path d="M20 20L8 16" stroke="currentColor" stroke-width="2.5"/>
+          </svg>
+        </div>
+        <h4>Handoff Specs</h4>
+        <p>Auto-generate handoff docs with spacing, colors, and interaction notes. Engineers get everything they need to build pixel-perfect.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workflow Section -->
+  <section class="workflow" id="design-workflow">
+    <div class="section-header">
+      <span class="section-tag" style="color: var(--design-color);">02 / Design Workflow</span>
+      <h2 class="section-title">Research to handoff,<br>without the gaps.</h2>
+    </div>
+
+    <div class="workflow-track">
+      <div class="workflow-line" style="background: linear-gradient(to bottom, var(--design-color), rgba(244,114,182,0.3), transparent);"></div>
+      <div class="workflow-step">
+        <div class="step-dot" style="border-color: var(--design-color);"></div>
+        <div class="step-content">
+          <span class="step-num">01</span>
+          <h4>Research & Discover</h4>
+          <p>Gather user insights, competitive analysis, and stakeholder requirements. Everything lives in one research hub.</p>
+        </div>
+      </div>
+      <div class="workflow-step">
+        <div class="step-dot" style="border-color: var(--design-color);"></div>
+        <div class="step-content">
+          <span class="step-num">02</span>
+          <h4>Explore & Ideate</h4>
+          <p>Create wireframes and prototypes with full context. Design briefs keep you aligned with product goals.</p>
+        </div>
+      </div>
+      <div class="workflow-step">
+        <div class="step-dot" style="border-color: var(--design-color);"></div>
+        <div class="step-content">
+          <span class="step-num">03</span>
+          <h4>Review & Iterate</h4>
+          <p>Share designs for structured feedback. Comments are threaded, decisions are documented, revisions are tracked.</p>
+        </div>
+      </div>
+      <div class="workflow-step">
+        <div class="step-dot" style="border-color: var(--design-color);"></div>
+        <div class="step-content">
+          <span class="step-num">04</span>
+          <h4>Handoff & Support</h4>
+          <p>Approved designs flow to engineering with specs attached. Answer questions inline without context-switching.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Design System Section -->
+  <section class="features" id="design-system">
+    <div class="section-header">
+      <span class="section-tag" style="color: var(--design-color);">03 / Design System</span>
+      <h2 class="section-title">Keep your system<br>in sync.</h2>
+    </div>
+
+    <div class="integration-grid">
+      <div class="integration-item" style="border-color: rgba(244,114,182,0.1);">
+        <div class="integration-name">Figma</div>
+        <div class="integration-desc">Live embeds & sync</div>
+      </div>
+      <div class="integration-item" style="border-color: rgba(244,114,182,0.1);">
+        <div class="integration-name">Sketch</div>
+        <div class="integration-desc">File import & preview</div>
+      </div>
+      <div class="integration-item" style="border-color: rgba(244,114,182,0.1);">
+        <div class="integration-name">Storybook</div>
+        <div class="integration-desc">Component mapping</div>
+      </div>
+      <div class="integration-item" style="border-color: rgba(244,114,182,0.1);">
+        <div class="integration-name">Maze</div>
+        <div class="integration-desc">Usability testing</div>
+      </div>
+      <div class="integration-item" style="border-color: rgba(244,114,182,0.1);">
+        <div class="integration-name">Hotjar</div>
+        <div class="integration-desc">Heatmaps & recordings</div>
+      </div>
+      <div class="integration-item" style="border-color: rgba(244,114,182,0.1);">
+        <div class="integration-name">Zeplin</div>
+        <div class="integration-desc">Handoff specs</div>
+      </div>
+      <div class="integration-item" style="border-color: rgba(244,114,182,0.1);">
+        <div class="integration-name">Lottie</div>
+        <div class="integration-desc">Animation handoff</div>
+      </div>
+      <div class="integration-item" style="border-color: rgba(244,114,182,0.1);">
+        <div class="integration-name">Notion</div>
+        <div class="integration-desc">Research docs</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-inner" style="border-color: rgba(244, 114, 182, 0.15);">
+      <h2>Ready to design with purpose?</h2>
+      <p>Give your design team the product context that bridges research and engineering.</p>
+      <div class="cta-actions">
+        <a href="#" class="btn btn-primary btn-lg" style="background: var(--design-color);">Start Free Trial</a>
+        <a href="#" class="btn btn-ghost btn-lg">Book a Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo"><span class="logo-icon">&#9679;</span> Green Papper</span>
+        <p>Product management for teams that ship.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>Product</h5>
+          <a href="index.html#features">Features</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="integrations.html">Integrations</a>
+        </div>
+        <div class="footer-col">
+          <h5>Teams</h5>
+          <a href="dev.html">For Dev</a>
+          <a href="design.html">For Design</a>
+          <a href="marketing.html">For Marketing</a>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Green Papper. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
