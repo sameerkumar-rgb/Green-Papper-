@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Papper — Blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+  <div class="grain"></div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">&#9679;</span> Green Papper
+      </a>
+      <div class="nav-links">
+        <a href="dev.html">Dev</a>
+        <a href="design.html">Design</a>
+        <a href="marketing.html">Marketing</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="#" class="nav-cta">Get Started</a>
+      </div>
+      <button class="mobile-menu" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero page-hero" style="min-height: 50vh;">
+    <div class="hero-badge">Blog</div>
+    <h1 class="hero-title">
+      <span class="line line-1">Ideas on</span>
+      <span class="line line-2">building</span>
+      <span class="line line-3">products.</span>
+    </h1>
+    <p class="hero-sub">
+      Insights on product management, cross-functional collaboration, and shipping software that matters.
+    </p>
+  </header>
+
+  <!-- Featured Post -->
+  <section class="pillars" style="padding-top: 0;">
+    <div class="section-header">
+      <span class="section-tag">Featured</span>
+    </div>
+
+    <div style="max-width: var(--content-max); margin: 0 auto; padding: 0 40px;">
+      <a href="blog-shipping-faster.html" class="blog-card blog-card-featured">
+        <div class="blog-card-badge" style="background: rgba(59,235,122,0.1); color: var(--accent);">Product Strategy</div>
+        <h2 class="blog-card-title" style="font-size: clamp(1.8rem, 4vw, 2.8rem);">Why Shipping Faster Starts with Better Alignment, Not Better Tools</h2>
+        <p class="blog-card-excerpt">Most teams don't have a velocity problem — they have an alignment problem. Here's how the best product teams close the gap between vision and execution.</p>
+        <div class="blog-card-meta">
+          <span>Alex Chen</span>
+          <span class="blog-meta-dot">&middot;</span>
+          <span>March 28, 2026</span>
+          <span class="blog-meta-dot">&middot;</span>
+          <span>8 min read</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- All Posts -->
+  <section class="features">
+    <div class="section-header">
+      <span class="section-tag">Latest Posts</span>
+      <h2 class="section-title">Fresh from<br>the team.</h2>
+    </div>
+
+    <div class="feature-grid" style="grid-template-columns: repeat(3, 1fr);">
+
+      <a href="blog-design-engineering-gap.html" class="blog-card">
+        <div class="blog-card-badge" style="background: rgba(244,114,182,0.1); color: var(--design-color);">Design</div>
+        <h3 class="blog-card-title">Closing the Design-Engineering Gap: A Practical Guide</h3>
+        <p class="blog-card-excerpt">The handoff between design and engineering is where most product quality is lost. Here are 5 patterns that actually work.</p>
+        <div class="blog-card-meta">
+          <span>Jordan Kim</span>
+          <span class="blog-meta-dot">&middot;</span>
+          <span>March 22, 2026</span>
+        </div>
+      </a>
+
+      <a href="blog-product-led-growth.html" class="blog-card">
+        <div class="blog-card-badge" style="background: rgba(251,191,36,0.1); color: var(--sales-color);">Growth</div>
+        <h3 class="blog-card-title">Product-Led Growth Isn't Just a GTM Strategy — It's an Org Design Choice</h3>
+        <p class="blog-card-excerpt">PLG requires more than a free tier. It demands that Product, Engineering, Marketing, and Sales operate from a shared playbook.</p>
+        <div class="blog-card-meta">
+          <span>Alex Chen</span>
+          <span class="blog-meta-dot">&middot;</span>
+          <span>March 15, 2026</span>
+        </div>
+      </a>
+
+      <a href="blog.html" class="blog-card">
+        <div class="blog-card-badge" style="background: rgba(96,165,250,0.1); color: var(--dev-color);">Engineering</div>
+        <h3 class="blog-card-title">The Case for Engineers Attending Sprint Reviews (Not Just Standups)</h3>
+        <p class="blog-card-excerpt">When engineers see the customer reaction to what they built, everything changes. Here's how to make sprint reviews actually valuable.</p>
+        <div class="blog-card-meta">
+          <span>Maya Rodriguez</span>
+          <span class="blog-meta-dot">&middot;</span>
+          <span>March 8, 2026</span>
+        </div>
+      </a>
+
+      <a href="blog.html" class="blog-card">
+        <div class="blog-card-badge" style="background: rgba(167,139,250,0.1); color: var(--stake-color);">Leadership</div>
+        <h3 class="blog-card-title">How to Run a Product Review That Doesn't Waste Everyone's Time</h3>
+        <p class="blog-card-excerpt">Executive product reviews are often theater. Here's a format that gives leadership real visibility without taxing the team.</p>
+        <div class="blog-card-meta">
+          <span>Alex Chen</span>
+          <span class="blog-meta-dot">&middot;</span>
+          <span>March 1, 2026</span>
+        </div>
+      </a>
+
+      <a href="blog.html" class="blog-card">
+        <div class="blog-card-badge" style="background: rgba(59,235,122,0.1); color: var(--accent);">Workflow</div>
+        <h3 class="blog-card-title">RICE Scoring Is Broken. Here's What to Use Instead.</h3>
+        <p class="blog-card-excerpt">RICE was a good start, but it optimizes for the wrong things. We built a prioritization framework that accounts for team capacity and strategic fit.</p>
+        <div class="blog-card-meta">
+          <span>Maya Rodriguez</span>
+          <span class="blog-meta-dot">&middot;</span>
+          <span>Feb 22, 2026</span>
+        </div>
+      </a>
+
+      <a href="blog.html" class="blog-card">
+        <div class="blog-card-badge" style="background: rgba(244,114,182,0.1); color: var(--design-color);">Research</div>
+        <h3 class="blog-card-title">User Research Without a Research Team: A PM's Survival Guide</h3>
+        <p class="blog-card-excerpt">You don't need a dedicated researcher to make evidence-based decisions. Here are lightweight research methods any PM can run.</p>
+        <div class="blog-card-meta">
+          <span>Jordan Kim</span>
+          <span class="blog-meta-dot">&middot;</span>
+          <span>Feb 14, 2026</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Newsletter CTA -->
+  <section class="cta-section">
+    <div class="cta-inner">
+      <h2>Stay in the loop.</h2>
+      <p>Get product management insights delivered to your inbox every week.</p>
+      <form style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; position: relative; max-width: 480px; margin: 0 auto;">
+        <input type="email" placeholder="you@company.com" style="flex: 1; min-width: 240px; padding: 14px 20px; background: var(--bg); border: 1px solid rgba(255,255,255,0.1); border-radius: 100px; color: var(--text); font-family: var(--font-body); font-size: 0.95rem; outline: none;" onfocus="this.style.borderColor='rgba(59,235,122,0.3)'" onblur="this.style.borderColor='rgba(255,255,255,0.1)'">
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo"><span class="logo-icon">&#9679;</span> Green Papper</span>
+        <p>Product management for teams that ship.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>Product</h5>
+          <a href="index.html#features">Features</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="integrations.html">Integrations</a>
+        </div>
+        <div class="footer-col">
+          <h5>Teams</h5>
+          <a href="dev.html">For Dev</a>
+          <a href="design.html">For Design</a>
+          <a href="marketing.html">For Marketing</a>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <a href="about.html">About</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Green Papper. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

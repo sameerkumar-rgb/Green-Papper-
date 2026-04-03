@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Closing the Design-Engineering Gap — Green Papper Blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+  <div class="grain"></div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">&#9679;</span> Green Papper
+      </a>
+      <div class="nav-links">
+        <a href="dev.html">Dev</a>
+        <a href="design.html">Design</a>
+        <a href="marketing.html">Marketing</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="#" class="nav-cta">Get Started</a>
+      </div>
+      <button class="mobile-menu" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Article Header -->
+  <header class="hero page-hero" style="min-height: 55vh;">
+    <a href="blog.html" class="hero-badge" style="cursor: pointer; transition: border-color 0.3s; border-color: rgba(244,114,182,0.3); color: var(--design-color);">&larr; Back to Blog</a>
+    <div style="margin-bottom: 16px;">
+      <span class="blog-card-badge" style="background: rgba(244,114,182,0.1); color: var(--design-color); display: inline-block;">Design</span>
+    </div>
+    <h1 class="hero-title">
+      <span class="line line-1" style="font-size: clamp(2rem, 5vw, 4rem);">Closing the</span>
+      <span class="line line-2" style="font-size: clamp(2rem, 5vw, 4rem);">Design-Engineering</span>
+      <span class="line line-3" style="font-size: clamp(2.2rem, 5.5vw, 4.5rem); color: var(--design-color);">Gap.</span>
+    </h1>
+    <div class="blog-card-meta" style="margin-top: 24px; opacity: 0; animation: fadeUp 0.8s var(--ease-out) 0.8s forwards;">
+      <span>Jordan Kim</span>
+      <span class="blog-meta-dot">&middot;</span>
+      <span>March 22, 2026</span>
+      <span class="blog-meta-dot">&middot;</span>
+      <span>7 min read</span>
+    </div>
+  </header>
+
+  <!-- Article Body -->
+  <article class="blog-article">
+    <div class="blog-article-inner">
+
+      <p class="blog-lead">The handoff between design and engineering is the most expensive moment in the product development cycle. It's where intent gets lost, quality erodes, and trust between teams breaks down. But it doesn't have to be this way.</p>
+
+      <h2>The Real Cost of the Gap</h2>
+      <p>When we talk about the "design-engineering gap," we're not just talking about Figma links that don't match what ships. We're talking about a systemic failure of context transfer.</p>
+      <p>A designer spends two weeks researching, ideating, and crafting an interaction pattern that elegantly solves a user problem. They hand it off. The engineer opens the Figma file, sees the visual output, and builds it — but misses the <em>reasoning</em> behind the decisions. The spacing was intentional. The animation timing was tested with users. The edge case was considered and deliberately omitted.</p>
+      <p>The result? A technically correct implementation that misses the design intent. And then the cycle begins: design reviews that feel adversarial, "pixel-pushing" tickets that frustrate engineers, and a growing resentment between two teams that should be collaborating.</p>
+
+      <blockquote>
+        "The gap between design and engineering isn't a handoff problem. It's a context problem."
+      </blockquote>
+
+      <h2>5 Patterns That Actually Work</h2>
+
+      <h3>1. Involve Engineers in Design Exploration</h3>
+      <p>The best design decisions happen when engineers are in the room — not to say "no," but to say "what if." Engineers bring knowledge of system constraints, performance implications, and existing component libraries that can dramatically improve design feasibility without compromising quality.</p>
+      <p>Try this: invite one engineer to your next design exploration session. Not to review — to co-create. The dynamic changes immediately.</p>
+
+      <h3>2. Attach Research to Specs, Not Separate Docs</h3>
+      <p>When user research lives in a separate Notion doc or Google Drive folder, it becomes invisible to engineers. Instead, embed the key insights directly in the spec or ticket. The engineer should be able to answer "why does this design exist?" without leaving their workflow.</p>
+
+      <h3>3. Design with Real Data and Constraints</h3>
+      <p>Designs that use placeholder content ("Lorem ipsum," perfect profile photos, short usernames) set false expectations. When engineers implement with real data, the design breaks — long strings overflow, empty states look broken, loading states are missing.</p>
+      <p>Design with the ugly data first. Your real users have 47-character email addresses and profile photos from 2012.</p>
+
+      <h3>4. Build a Shared Component Language</h3>
+      <p>When design components and code components have different names, every handoff becomes a translation exercise. "Is this a Card or a Panel? A Dialog or a Modal? A Badge or a Tag?"</p>
+      <p>Invest in a shared naming system. When a designer says "use the ActionCard component," the engineer should know exactly what code to reach for — and vice versa.</p>
+
+      <h3>5. Make Design QA a First-Class Step</h3>
+      <p>Design review shouldn't happen after the PR is merged. Build design QA into your development workflow as a required step before merge. Give designers access to preview environments. Make it easy for them to flag issues with annotated screenshots rather than vague Slack messages.</p>
+
+      <h2>The Infrastructure Layer</h2>
+      <p>These patterns work best when they're supported by infrastructure. That means:</p>
+      <ul>
+        <li>Figma embeds that live inside tickets, not linked from them</li>
+        <li>Design tokens that sync between Figma and code</li>
+        <li>Preview deployments that designers can access without asking</li>
+        <li>A component library tracker that shows what's designed vs. what's built</li>
+      </ul>
+      <p>Most teams try to solve this with process ("let's add a design review meeting"). Process helps, but infrastructure scales. When context travels with the work automatically, you don't need to rely on humans remembering to share it.</p>
+
+      <blockquote>
+        "Process helps, but infrastructure scales. When context travels with the work, handoffs disappear."
+      </blockquote>
+
+      <h2>A Different Kind of Collaboration</h2>
+      <p>The teams that close this gap don't just ship better products — they enjoy building them more. When designers feel their intent is respected and engineers feel their constraints are understood, something shifts. The adversarial dynamic dissolves. What replaces it is genuine partnership.</p>
+      <p>That's not soft, feel-good nonsense. It's a competitive advantage. Teams that collaborate well move faster, attract better talent, and build products users actually love.</p>
+
+      <div class="blog-article-divider"></div>
+
+      <p style="color: var(--text-muted); font-size: 0.9rem;"><em>Jordan Kim is the Head of Design at Green Papper. Previously, she was a design lead at Figma.</em></p>
+
+    </div>
+  </article>
+
+  <!-- Related Posts -->
+  <section class="features">
+    <div class="section-header">
+      <span class="section-tag">Keep Reading</span>
+      <h2 class="section-title">Related posts.</h2>
+    </div>
+
+    <div class="feature-grid" style="grid-template-columns: repeat(2, 1fr);">
+      <a href="blog-shipping-faster.html" class="blog-card">
+        <div class="blog-card-badge" style="background: rgba(59,235,122,0.1); color: var(--accent);">Product Strategy</div>
+        <h3 class="blog-card-title">Why Shipping Faster Starts with Better Alignment, Not Better Tools</h3>
+        <div class="blog-card-meta">
+          <span>Alex Chen</span>
+          <span class="blog-meta-dot">&middot;</span>
+          <span>March 28, 2026</span>
+        </div>
+      </a>
+      <a href="blog-product-led-growth.html" class="blog-card">
+        <div class="blog-card-badge" style="background: rgba(251,191,36,0.1); color: var(--sales-color);">Growth</div>
+        <h3 class="blog-card-title">Product-Led Growth Isn't Just a GTM Strategy — It's an Org Design Choice</h3>
+        <div class="blog-card-meta">
+          <span>Alex Chen</span>
+          <span class="blog-meta-dot">&middot;</span>
+          <span>March 15, 2026</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-inner" style="border-color: rgba(244, 114, 182, 0.15);">
+      <h2>Ready to close the gap?</h2>
+      <p>Give your design and engineering teams the shared context they need.</p>
+      <div class="cta-actions">
+        <a href="#" class="btn btn-primary btn-lg" style="background: var(--design-color);">Start Free Trial</a>
+        <a href="contact.html" class="btn btn-ghost btn-lg">Book a Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo"><span class="logo-icon">&#9679;</span> Green Papper</span>
+        <p>Product management for teams that ship.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>Product</h5>
+          <a href="index.html#features">Features</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="integrations.html">Integrations</a>
+        </div>
+        <div class="footer-col">
+          <h5>Teams</h5>
+          <a href="dev.html">For Dev</a>
+          <a href="design.html">For Design</a>
+          <a href="marketing.html">For Marketing</a>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <a href="about.html">About</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Green Papper. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
