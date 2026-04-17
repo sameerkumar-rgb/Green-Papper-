@@ -253,6 +253,57 @@
   color: var(--text);
 }
 
+/* ============ FAQ SECTION ============ */
+.faq-section {
+  padding: var(--section-pad) 0;
+  background: var(--bg-elevated);
+  position: relative;
+}
+
+.faq-grid {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.faq-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 32px;
+  transition: transform 0.4s var(--ease-out), border-color 0.4s, box-shadow 0.4s;
+}
+
+.faq-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(22, 163, 74, 0.2);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+}
+
+.faq-card h4 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+.faq-card p {
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 640px) {
+  .faq-grid {
+    grid-template-columns: 1fr;
+    padding: 0 24px;
+  }
+}
+
 /* ============ RESPONSIVE ============ */
 @media (max-width: 900px) {
   .integration-grid {
